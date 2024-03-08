@@ -86,14 +86,18 @@ print("For Population = 70000, we predict a profit of $"+str(round(predict2,0)))
 ,,,
 
 
-## Output
-![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](![270279726-5440dbe0-743e-4f21-9b15-c6750af2f4e1](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/09a5f4fe-a897-4191-9d89-8fec16658469)![270279708-aef30837-1496-469f-97f8-2a7a64ca63b7](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/ba0f8858-f761-4eaa-8138-38e44f5c1d3f)![270279961-17ee5b6b-631f-475a-9c3f-4e0a5e3a7b2e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/6dd7c600-9b78-4966-91d8-d9cb6dfd1963)![270279896-59d451d6-9bc7-4a74-aca4-e5c6e1790efb](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/e0a27565-ae92-4a7a-bdf0-8dda77499d76)![270279656-024ca885-488e-400f-a698-300882d60a1a](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/35af7d27-fcc5-414b-9649-ab6d86a93249)![270279641-b1150597-9c47-4e21-874e-7714e24aad18](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/6f1e7321-d252-4a9f-adef-67b13a1b2a8e)
+## Output:
+![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/32af4388-28ed-40dd-9cef-66a53f016b41)![270279726-5440dbe0-743e-4f21-9b15-c6750af2f4e1](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/fa8b986c-84e1-4a29-8f00-2fb2ef8d1a25)![270279708-aef30837-1496-469f-97f8-2a7a64ca63b7](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/c0c7906e-4587-4610-afb1-f6b39b3aaa37)![270279961-17ee5b6b-631f-475a-9c3f-4e0a5e3a7b2e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/1c716434-efd8-41f2-b9e5-54001d70a815)![270279896-59d451d6-9bc7-4a74-aca4-e5c6e1790efb](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/c320cbc7-47b3-4bb5-b6f3-0c86f080c901)![270279656-024ca885-488e-400f-a698-300882d60a1a](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/b5fc2e4a-758d-4cf7-83e1-c14635ec91c5)![270279641-b1150597-9c47-4e21-874e-7714e24aad18](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/b901ec6b-2d52-420c-9b99-b40de978f5c8)
 
 
 
 
 
-https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/b4024f04-a3cd-4901-aba9-e81703d57000)
+
+
+
+
+
 
 
 ## Result:
