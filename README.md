@@ -19,50 +19,79 @@ To write a program to predict the profit of a city using the linear regression m
 ## Program:
 ```
 /*
+/*
 Program to implement the linear regression using gradient descent.
 Developed by: shyam R
 RegisterNumber: 212223040200
-import numpy as np
+*/
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
-data=pd.read_csv("student_scores.csv")
-data.head()
-data.isnull().sum()
-x=data.Hours
-y=data.Scores
-y.head()
-n=len(x)
-m=0
-c=0
-L=0.001
-loss=[]
-for i in range(10000):
-    ypred=m*x+c
-    MSE=(1/n)*sum((ypred-y)*2)
-    dm=(2/n)*sum(x*(ypred-y))
-    dc=(2-n)*sum(ypred-y)
-    c=c-L*dc
-    m=m-L*dm
-    loss.append(MSE)
-    print(m)
-print(m,c)
-y_pred=m*x+c
-plt.scatter(x,y,color="red")
-plt.plot(x,y_pred)
-plt.xlabel("Study hours")
-plt.ylabel("Scores")
-plt.title("Study hours vs Scores")
-plt.plot(loss)
-plt.xlabel("iteration")
-plt.ylabel("loss")
+data=pd.read_csv("ex1.txt",header=None)
+plt.scatter(data[0],data[1])
+plt.xticks(np.arange(5,30,step=5))
+plt.yticks(np.arange(-5,30,step=5))
+plt.xlabel("Population of City(10,000s)")
+plt.ylabel("Profit ($10,000)")
+plt.title("Profit Prediction")
 
+def computeCost(X,y,theta):
+    m=len(y) 
+    h=X.dot(theta) 
+    square_err=(h-y)**2
+    return 1/(2*m)*np.sum(square_err) 
 
+data_n=data.values
+m=data_n[:,0].size
+X=np.append(np.ones((m,1)),data_n[:,0].reshape(m,1),axis=1)
+y=data_n[:,1].reshape(m,1)
+theta=np.zeros((2,1))
+computeCost(X,y,theta) 
 
+def gradientDescent(X,y,theta,alpha,num_iters):
+    m=len(y)
+    J_history=[] #empty list
+    for i in range(num_iters):
+        predictions=X.dot(theta)
+        error=np.dot(X.transpose(),(predictions-y))
+        descent=alpha*(1/m)*error
+        theta-=descent
+        J_history.append(computeCost(X,y,theta))
+    return theta,J_history
 
-## Output:
-![2](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/0854b0db-b679-4375-a6d1-ae15238b154e)
-![3](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/ec64e088-ef2f-4b3d-ae28-04bfd7c5660c)
+theta,J_history = gradientDescent(X,y,theta,0.01,1500)
+print("h(x) ="+str(round(theta[0,0],2))+" + "+str(round(theta[1,0],2))+"x1")
 
+plt.plot(J_history)
+plt.xlabel("Iteration")
+plt.ylabel("$J(\Theta)$")
+plt.title("Cost function using Gradient Descent")
 
+plt.scatter(data[0],data[1])
+x_value=[x for x in range(25)]
+y_value=[y*theta[1]+theta[0] for y in x_value]
+plt.plot(x_value,y_value,color="r")
+plt.xticks(np.arange(5,30,step=5))
+plt.yticks(np.arange(-5,30,step=5))
+plt.xlabel("Population of City(10,000s)")
+plt.ylabel("Profit ($10,000)")
+plt.title("Profit Prediction")
+
+def predict(x,theta):
+    predictions=np.dot(theta.transpose(),x)
+    return predictions[0]
+
+predict1=predict(np.array([1,3.5]),theta)*10000
+print("For Population = 35000, we predict a profit of $"+str(round(predict1,0)))
+
+predict2=predict(np.array([1,7]),theta)*10000
+print("For Population = 70000, we predict a profit of $"+str(round(predict2,0)))
+## Output:![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/9990fbb7-6d2a-412b-8f7a-9017caf47ca5)
+![270279726-5440dbe0-743e-4f21-9b15-c6750af2f4e1](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/75fefdd3-a885-48db-a92d-a5718bfae966)
+![270279708-aef30837-1496-469f-97f8-2a7a64ca63b7](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/5c6a44e0-c3e3-4dbd-9ea3-1904983e2720)
+![270279961-17ee5b6b-631f-475a-9c3f-4e0a5e3a7b2e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/19e5902f-9c79-4b3d-8304-62d44f22758e)
+![270279896-59d451d6-9bc7-4a74-aca4-e5c6e1790efb](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/ab01ccf7-d063-4858-8344-7fc3797dcf9e)
+![270279656-024ca885-488e-400f-a698-300882d60a1a](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/4abcda15-30bc-4717-a670-6c94bb9e55ba)
+![270279641-b1150597-9c47-4e21-874e-7714e24aad18](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/5677cd8c-d6d3-45a9-a82a-a242a7eb210c)
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
