@@ -86,12 +86,28 @@ print("For Population = 35000, we predict a profit of $"+str(round(predict1,0)))
 
 predict2=predict(np.array([1,7]),theta)*10000
 print("For Population = 70000, we predict a profit of $"+str(round(predict2,0)))
-## Output:![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/9990fbb7-6d2a-412b-8f7a-9017caf47ca5)
-![270279726-5440dbe0-743e-4f21-9b15-c6750af2f4e1](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/75fefdd3-a885-48db-a92d-a5718bfae966)
-![270279708-aef30837-1496-469f-97f8-2a7a64ca63b7](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/5c6a44e0-c3e3-4dbd-9ea3-1904983e2720)
-![270279961-17ee5b6b-631f-475a-9c3f-4e0a5e3a7b2e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/19e5902f-9c79-4b3d-8304-62d44f22758e)
-![270279896-59d451d6-9bc7-4a74-aca4-e5c6e1790efb](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/ab01ccf7-d063-4858-8344-7fc3797dcf9e)
-![270279656-024ca885-488e-400f-a698-300882d60a1a](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/4abcda15-30bc-4717-a670-6c94bb9e55ba)
-![270279641-b1150597-9c47-4e21-874e-7714e24aad18](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/5677cd8c-d6d3-45a9-a82a-a242a7eb210c)
+## Output:
+## Profit prediction:
+![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/89a34aea-949b-412b-9be1-f979270984fe)
+## Function:
+![270279726-5440dbe0-743e-4f21-9b15-c6750af2f4e1](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/fa666e41-d9c0-4571-9ea7-08bb3e9864f5)
+## GRADIENT DESCENT:
+![270279708-aef30837-1496-469f-97f8-2a7a64ca63b7](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/44b34935-d28f-4f62-9d3b-6ff6f856d45c)
+## COST FUNCTION USING GRADIENT DESCENT:
+![270279961-17ee5b6b-631f-475a-9c3f-4e0a5e3a7b2e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/b1883d89-4b2c-431d-ad12-09d6b7bf2fc5)
+## LINEAR REGRESSION USING PROFIT PREDICTION:
+![270279896-59d451d6-9bc7-4a74-aca4-e5c6e1790efb](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/0249e6ab-9b71-4479-8385-7847cb85f1d6)
+## PROFIT PREDICTION FOR A POPULATION OF 35000:
+![270279656-024ca885-488e-400f-a698-300882d60a1a](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/044960ae-a7ed-4b60-819a-f41cb3938a06)
+## PROFIT PREDICTION FOR A POPULATION OF 70000:
+![270279641-b1150597-9c47-4e21-874e-7714e24aad18](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/962b4c82-8a95-45fd-9ebc-7f5a69eb461f)
+
+
+
+
+
+
+
+
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
