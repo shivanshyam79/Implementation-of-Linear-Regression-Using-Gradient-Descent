@@ -86,6 +86,7 @@ print("For Population = 35000, we predict a profit of $"+str(round(predict1,0)))
 
 predict2=predict(np.array([1,7]),theta)*10000
 print("For Population = 70000, we predict a profit of $"+str(round(predict2,0)))
+```
 ## Output:
 ## Profit prediction:
 ![270279988-72c751de-9d20-419c-908d-f9d68e91d28e](https://github.com/shivanshyam79/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/151513860/89a34aea-949b-412b-9be1-f979270984fe)
